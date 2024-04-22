@@ -36,7 +36,7 @@ function App() {
     if (lat != null && lon != null) {
       fetchWeather();
     }
-  }, [lat, lon]);
+  }, [lat, lon, label]);
 
   const handleInputValue = (coord, label) => {
     setLat(coord[0]);

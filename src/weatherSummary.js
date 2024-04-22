@@ -67,7 +67,7 @@ function WeatherSummary({
           {props.timestamp.substring(5, 10)}
         </div>
       );
-    } else if (props.index == getCurrentTimeStampIndex(hourlyForeCast)) {
+    } else if (props.index === getCurrentTimeStampIndex(hourlyForeCast)) {
       dateElement = <div className="font-bold text-l">Now</div>;
     } else {
       dateElement = <div className="font-bold text-l">&nbsp;</div>;

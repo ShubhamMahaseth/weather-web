@@ -4,7 +4,6 @@ import "./App.css";
 
 function SearchBar({ onInputValue, unitValue }) {
   const [location, setLocation] = useState(null);
-  const [unit, setUnit] = useState("°C");
 
   const handleChange = (selectedOption) => {
     setLocation(selectedOption);
@@ -12,7 +11,6 @@ function SearchBar({ onInputValue, unitValue }) {
   };
 
   const handleUnitChange = (newUnit) => {
-    setUnit(newUnit);
     unitValue(newUnit);
   };
 
