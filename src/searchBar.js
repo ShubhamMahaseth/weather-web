@@ -55,13 +55,13 @@ function SearchBar({ onInputValue, unitValue }) {
           className="bg-unit-card text-gray-800 font-bold py-2 px-4 rounded-l-xl"
           onClick={() => handleUnitChange(0)}
         >
-          °C
+          Celsius (°C)
         </button>
         <button
           className="bg-unit-card text-gray-800 font-bold py-2 px-4 rounded-r-xl"
           onClick={() => handleUnitChange(1)}
         >
-          °F
+          Fahrenheit (°F)
         </button>
       </div>
     </div>
